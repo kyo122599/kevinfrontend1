@@ -1,0 +1,26 @@
+/* Estilo del anuncio de bienvenida gamer */
+.anuncio-bienvenida {
+    background-color: #1a1a1d; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    text-align: center; /* Centrar texto */
+    margin: 20px; /* Espaciado alrededor del anuncio */
+}
+
+.anuncio-bienvenida h1 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif; /* Fuente gamer */
+}
+
+.anuncio-bienvenida p {
+    font-size: 1.2rem; /* Tamaño de fuente para párrafos */
+    margin: 5px 0;
+}
+
+.anuncio-bienvenida i {
+    color: #ff007f; /* Color neón para íconos */
+    margin-right: 8px; /* Espaciado entre ícono y texto */
+}

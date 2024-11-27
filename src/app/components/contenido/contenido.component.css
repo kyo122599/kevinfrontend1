@@ -1,0 +1,86 @@
+/* Estilo general para el contenedor principal */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #282c34;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Contenedor para los botones */
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 2cm;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px;
+    z-index: 1;
+  }
+  
+  .boton-auto {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #8e44ad, #f39c12, #e74c3c); /* Degradado con colores vibrantes */
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6); /* Resplandor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+  }
+  
+  .boton-auto:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.8);
+  }
+  
+  .boton-auto:nth-child(1) { top: 10px; left: 10px; } /* Botón en la esquina superior izquierda */
+  .boton-auto:nth-child(2) { top: 10px; right: 10px; } /* Botón en la esquina superior derecha */
+  .boton-auto:nth-child(3) { bottom: 10px; left: 10px; } /* Botón en la esquina inferior izquierda */
+  .boton-auto:nth-child(4) { bottom: 10px; right: 10px; } /* Botón en la esquina inferior derecha */
+  
+  /* Iconos de los botones */
+  .auto-icon {
+    font-size: 80px; /* Iconos más grandes */
+    color: white;
+  }
+  
+  /* Estilo para los mensajes */
+  .mensaje {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f39c12, #e74c3c); /* Fondo llamativo */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveMessage 2s infinite alternate; /* Animación para mover el mensaje */
+  }
+  
+  /* Animación para mover el mensaje */
+  @keyframes moveMessage {
+    0% { top: 20px; }
+    50% { top: 100px; }
+    100% { top: 200px; }
+  }
+  
